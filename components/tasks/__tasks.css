@@ -1,0 +1,54 @@
+.tasks-list{
+    width: 100%;
+    gap: .5rem;
+}
+
+.tasks-item{
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: .5rem;
+    background-color: var(--color__fill-2);
+    gap: 1rem;
+}
+
+.tasks-item.--check{
+    opacity: .5;
+}
+
+.tasks-item__title{
+    flex: 1;
+    font-size: 1.25rem;
+    font-weight: 500;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.tasks-item__check{
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.tasks-item__trash, .tasks-item__edit, .tasks-item__save{
+    width: 1.5rem;
+}
+
+.tasks-item__trash span, .tasks-item__edit span, .tasks-item__save span{
+    padding-bottom: 100%;
+}
+
+.tasks-item__trash path, .tasks-item__edit path, .tasks-item__save path{
+    transition: all .24s ease-in-out;
+}
+
+.tasks-list div{
+    width: 100%;
+}
+
+.tasks-item__trash:hover path{
+    fill: red;
+}
+.tasks-item__edit:hover path, .tasks-item__save:hover path{
+    stroke: var(--color__fill-1);
+}
